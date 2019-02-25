@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+ <link rel="stylesheet" href="./new/bootstrap.min.css"> 
+    <title>Smart</title>
+
+     <link rel="stylesheet" href="./new/hover.css">
+     <link rel="stylesheet" href="./new/bootstrap-social.css">
+     <link rel="stylesheet" href="./new/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="./new/flaticon.css"> 
+  
+<style>
+  * {
+  box-sizing: border-box;
+} 
+#root{
+  overflow-x: hidden;
+}
+.slide{
+
+  animation: slide 2s ease-in forwards;
+}
+@keyframes slide{
+
+0%{
+font-size: 20px;
+opacity: 0; 
+font-size: 0px;
+
+}
+
+100%{
+opacity: 1;
+font-size: 36px;
+}
+}
+
+.showslow{
+
+animation: showslow 0.8s ease-in forwards;
+}
+
+@keyframes showslow{
+
+0%{
+
+opacity: 0; 
+
+}
+
+100%{
+opacity: 1;
+
+}
+}
+
+.rotate{
+  animation: rotate 3s ease-out alternate 2;
+
+}
+@keyframes rotate{
+0%{
+transform: rotateY(0deg)
+}
+100%{
+transform: rotateY(90deg);
+
+}
+  
+
+}
+.moveXY{
+
+animation: moveXY 0.8s ease-in forwards;
+}
+
+
+
+
+
+</style>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+
+    <script src="./new/jquery.js"></script>   
+    <script src="./new/popper.min.js"></script>   
+    <script src="./new/bootstrap.min.js"></script>
+    
+    
+  </body>
+
+</html>

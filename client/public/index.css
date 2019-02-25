@@ -1,0 +1,341 @@
+* {
+  box-sizing: border-box;
+} 
+#root{
+  overflow-x: hidden;
+}
+/*control seting*/
+
+
+.add_device_form {
+width: 40%;
+margin: auto;
+margin-top: 20px;}
+.out{
+  width:200px;
+}
+.controladdform input{
+  border-radius: 10px;
+}
+
+
+
+
+.invalid-feedback {
+  width: 100%;
+    margin-top: 0.25rem;
+  font-size: 80%;
+  color: #dc3545;
+}
+.tab-pane  form {
+  float: left;
+  margin-left: 13px;
+}
+.btn-default :hover{
+  background-color: #2774a2;
+}
+.row {
+  margin-right: -22px;
+  margin-left: -5px;
+}
+td button{
+  transition: 0.6s;
+}
+.thumbnail h4{
+  color: #000000;
+}
+.thumbnail{
+  text-align: center;
+  transition: 1s;
+  width: 30%;
+  display: inline-block;
+  margin: 10px;
+}
+
+
+.thumbnail :focus {
+background-color: #2774a2;
+border: 0;
+margin: 20px;
+color: white;
+
+  }
+  
+tr td{
+  color: #2774a2;
+  font-size: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ font-weight: normal;
+}
+.table{
+  margin: 0;
+  border: 1px #c5c5c5 solid;
+  border-right: 0px;
+  border-left: 0px;
+
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 50px auto;
+}
+/*__________________  NAVBAR_____________________ */
+
+
+body { padding-top: 50px; 
+background-color: white;
+
+}
+
+
+.delete{
+  float: right;
+  margin-right: 15px;
+background-image: none;
+color :#2774a2;
+font-size:20px ;
+transition: 0.5;
+}
+.deleteSection{
+  float: right;
+  color: beige;
+  font-size:20px ;
+transition: 0.5;
+
+}
+.deleteSection:hover,.delete:hover{
+  color: #dc3545;
+  cursor: pointer;
+  scale: 1.5;
+transition: 0.;
+
+}
+
+
+
+#contentcolor{
+  background: #fff;
+}
+.dropdown{
+
+  background-color: white;
+}
+
+.navbar-inverse{
+  background-color: #2774a2;
+  
+}
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a{
+  color: #fff;
+  transition: 0.5s;
+}
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover{
+  font-size: 20px;
+  font-weight: bold;
+  
+  
+}
+
+.navbar-inverse .navbar-brand{
+
+  color: #fff;
+}
+/*------------button animation--------------------------------------------------------*/
+
+.btn  span{
+  transition: 0.5s;
+}
+
+.btn:hover span{
+  margin-left: 10px;
+}
+/*____________________cover _______________________________*/
+
+inner>.item>img {
+  line-height: 1;
+  width: fit-content;
+}
+.jumbotron{
+
+background-color: white;
+}
+
+.container{
+
+  padding-right: 0%;
+  padding-left: 0%;
+}
+/*--------------------------------------------------
+
+_____________________  LOGIN   __________________________________*/
+h1 ,h2{
+  color: #2774a2;
+  font-weight: bold;
+  
+}
+input{
+  text-align: center;
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  background-color: white;
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+ 
+form input:hover{
+  border:2px solid #2774a2;
+  padding: 6px 20px;
+-webkit-transition: padding 0.1s ease;
+-moz-transition: padding 0.1s ease;
+-o-transition: padding 0.1s ease;
+transition: padding 0.1s ease;
+  
+}
+
+
+
+input:focus,input:-webkit-autofill:focus , input:-webkit-autofill{
+ -webkit-box-shadow : inset 0 0 0px 9999px white;
+}
+input{
+  border: 2px solid #000000;
+  margin: 10px auto; 
+  
+}
+
+/*--------------------------------------------------
+
+_____________________Content_________________________*/
+
+.row{
+overflow: hidden;
+
+}
+[class*= "col-"]{
+margin-bottom: -99999px;
+text-align: center;
+padding-bottom: 99999px;
+}
+
+
+.glyphicon > a{
+
+font-size: 18px;
+}
+
+div ul li a .img-circle{
+
+  height:30px;
+}
+
+
+
+.container .jumbotron, .container-fluid .jumbotron {
+
+  background: #fff;
+  margin-top: -17px ;
+}
+
+
+
+
+
+
+/*--------------------------content---------------------------*/
+.contentP {
+  background-color: #d4eeff;
+  color: black;
+
+  overflow: hidden;
+  max-height: 190px;
+  margin-bottom: 25px;
+  height: -webkit-fill-available;
+
+}
+    /*
+______________________Footer________________________*/
+
+
+
+/*
+.jumbotron{
+background-color: white;
+width: 100%;
+}
+
+body {
+   
+    
+    padding-top: 50px;
+  }
+.starter-template {
+    
+    text-align: center;
+  }
+
+  body {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+  }
+  
+  .form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+  }
+  .form-signin .form-signin-heading,
+  .form-signin .checkbox {
+    margin-bottom: 10px;
+  }
+  .form-signin .checkbox {
+    font-weight: normal;
+  }
+  .form-signin .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .form-signin .form-control:focus {
+    z-index: 2;
+  }
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }

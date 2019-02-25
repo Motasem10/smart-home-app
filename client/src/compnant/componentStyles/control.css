@@ -1,0 +1,13 @@
+.delete{
+    color: #ef6d6d;
+    font-size: 20;
+    font-size: 20px;
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+}
+.section{
+     background-color: "#425566";
+     margin: 0;
+     color: white;
+}
