@@ -40,6 +40,9 @@
   
   .first-card {
     background-color: #d4eeff; }
+    NavLink{
+      color:'white'
+  }
   
   .last-card .card-header {
     background-color: #2774a2;

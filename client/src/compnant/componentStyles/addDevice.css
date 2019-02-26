@@ -2,3 +2,6 @@
 .card-header{
  cursor: pointer;   
 }
+NavLink{
+    color:'white'
+}

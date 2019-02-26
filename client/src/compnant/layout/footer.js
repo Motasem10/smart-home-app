@@ -54,6 +54,8 @@ class Footer extends Component {
              { !this.props.isAuth && (<div> <li><NavLink to="./login">login</NavLink></li>
               <li><NavLink to="/sign">signup</NavLink></li></div>)
               }
+              { this.props.isAuth && (<div> <li><NavLink to="./doc">doc</NavLink></li></div>)
+              }
             </ul>
             </div>
             <span className="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>

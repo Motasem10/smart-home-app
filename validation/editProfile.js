@@ -15,7 +15,7 @@ console.log({email:data.email})
 //if(!validator.equals(data.password,data.password2))
 //errors.password2='it is not asame'
 
-if(!validator.isMobilePhone(data.phone)) errors.phone='invalid phone';
+if(data.phone.length>4&&!validator.isMobilePhone(data.phone)) errors.phone='invalid phone';
 
   if(data.name.length>2&& !validator.isLength(data.name,{min:3,max:30})) errors.name='name must be betwen 3 qand 30 char';
 
