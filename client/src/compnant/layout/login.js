@@ -84,7 +84,7 @@ class Login extends Component {
             </span>
           </button>
           <div style={{ color: "#3F51B5" }} className="success">
-            <NavLink to="/forgetpassword" className="">
+            <NavLink to="/forgetpassword" className="text-dark">
               forget password?
             </NavLink>
           </div>

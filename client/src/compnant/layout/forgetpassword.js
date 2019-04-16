@@ -28,7 +28,7 @@ try{
 await axios.post('/login/edit',{email:this.state.email,password:this.state.password,password2:this.state.password2,code:this.state.code});
 await this.props.loginuser({email:this.state.email,password:this.state.password},this.props.history);
 this.setState({email:'',errors :'',sendCode:true});
-toast.success('email has been send')
+toast.success('email has been changed')
 }catch(err){
   console.log(err.response.data)
   this.setState({errors:err.response.data});
