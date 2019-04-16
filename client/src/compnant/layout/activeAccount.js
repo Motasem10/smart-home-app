@@ -8,8 +8,6 @@ class ActivateAccount extends Component {
     err:'',
     isAcitve:false
   };
-
-
   componentWillUnmount=()=>{
   !this.state.isAcitve &&this.props.isAuth && this.props.history.push('activeaccount');
     console.log('componentWillUnmount',this.props);

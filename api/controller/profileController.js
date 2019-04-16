@@ -48,10 +48,14 @@ addDevice :(req, res) => {
     }
   }
   if(!isFoundSection) return res.json({errors:'error in section name'});
+  
   profile.section[i].device.unshift(newdevice);
   profile.save().then(profile => {
 return res.json(profile);
 
+}).catch(err=>{
+  console.error({err});
+res.status(500).json(err);
 });  
   
 

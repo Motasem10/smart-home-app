@@ -13,6 +13,9 @@ class Edit extends Component {
   };
 this.change=  this.change.bind(this)
  }
+ componentDidMount=()=>{
+   this.setState({name:this.props.name,phone:this.props.email})
+ }
   change = e => {
     e.preventDefault()
     this.setState({ [e.target.name]: e.target.value });
@@ -31,7 +34,7 @@ this.change=  this.change.bind(this)
     }
   };
   Tr=(label,value,nowEdit)=>{
-console.log({label,value,nowEdit})
+
    return (
          <tr>
         <td>{label}</td>
@@ -47,6 +50,7 @@ console.log({label,value,nowEdit})
           <input
             name={label}
             type="text"
+
             style={{
               display:
                 nowEdit === label ?"inline-block":"none",

@@ -1,5 +1,6 @@
 const express=require('express');
 const app=express();
+const server =require('http').createServer(app);
 const KEYS=require('./config/keys');
 const mongoose=require('mongoose');
 const bodyParser=require('body-parser');
@@ -11,6 +12,9 @@ const login=require('./api/router/user/login');
 const register=require('./api/router/user/register');
 const hardware=require('./api/router/hardware/hardware');
 const admin=require('./api/router/admin/admin')
+
+
+
 
 if(!(config.get('jwtKey')&&config.get('password')&&config.get('dbPassword') )){
  console.error(`FATEL ERROR :please set envireonment val (password,jwtKey,dbPassword)`)   
@@ -59,7 +63,17 @@ if(process.env.NODE_ENV==='production'){
     }
     
 
-app.listen(KEYS.PORT,(req,res)=>{
+server.listen(KEYS.PORT,(req,res)=>{
 
     console.log(`server is runing at ${KEYS.PORT}`);
 });
+
+// const socket=require('socket.io')(server);
+ 
+// socket.on('connection',(user)=>{
+//  console.log('socket connected ');
+//  user.on('hellow',(data)=>{
+//      console.log('hellow',{data});
+//  })
+ 
+// })

@@ -3,6 +3,8 @@ import axios from "axios";
 import "../../../img/device img/001-air-conditioner.png";
 import '../../componentStyles/control.css';
 import click from '../../../img/click.mp3'
+
+
 const sound=new Audio(click)
 const style = {
   transition: "all 1s ease-out"
@@ -122,7 +124,7 @@ class Control extends Component {
                     &times;
                   </span>
                 </div>
-                <table className="table showslow">
+                <table className="table showslow m-0">
                   {section.device.map(devices => {
                     return (
                       <tbody key={devices._id}>

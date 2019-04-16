@@ -29,6 +29,14 @@ import Cover from './compnant/layout/cover';
 import Forget from './compnant/layout/forgetpassword';
 import ActivateAccount from './compnant/layout/activeAccount';
 import Docs from './compnant/layout/profile/docs';
+import io from 'socket.io-client';
+// const socket=io('http://localhost:3000');
+// setInterval(()=>
+// socket.emit('hellow',{d:'from client side'})
+// ,5000);  
+// socket.on('connect',()=>{
+//   alert('connected');
+// })     
 //check for token 
 if(localStorage.jwtToken){
 //set auth token header auth

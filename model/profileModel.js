@@ -21,6 +21,7 @@ section: [{
         type :String,
         required:true,
         max:20,
+       
      }  ,
      state:{
      type :String,
@@ -40,6 +41,7 @@ section: [{
      pin:{
 type :Number,
 required:true,
+unique:true
 
      }}]
      ,
