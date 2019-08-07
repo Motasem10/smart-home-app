@@ -16,6 +16,7 @@ const admin=require('./api/router/admin/admin')
 
 
 
+
 if(!(config.get('jwtKey')&&config.get('password')&&config.get('dbPassword') )){
  console.error(`FATEL ERROR :please set envireonment val (password,jwtKey,dbPassword)`)   
 process.exit(1);
@@ -29,6 +30,12 @@ app.use(passport.initialize());
 //passport config
 require('./config/passportConfig')(passport);
 //router
+
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*"); // update to match the domain you will make the request from
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
 app.use('/login',login);
 app.use('/register',register);
 app.use('/profile',profile);
